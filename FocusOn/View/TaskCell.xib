@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="TaskCellID" rowHeight="81" id="KGk-i7-Jjw" customClass="TaskCell" customModule="FocusON" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="808" height="81"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="808" height="81"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AZT-gt-w7h">
+                        <rect key="frame" x="60" y="20.5" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="QHE-ZI-0LJ"/>
+                            <constraint firstAttribute="height" constant="40" id="RGn-2A-zJm"/>
+                        </constraints>
+                        <state key="normal" title="X">
+                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                        </state>
+                        <connections>
+                            <action selector="TaskCheckMarkButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Rnx-6j-N0d"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L6i-y5-O0g">
+                        <rect key="frame" x="10" y="20.5" width="40" height="40"/>
+                        <color key="backgroundColor" red="0.74415290359999997" green="0.15467503669999999" blue="0.10577686880000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="1Ub-sR-hxN"/>
+                            <constraint firstAttribute="width" constant="40" id="DM5-FA-Or2"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="21"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E2f-58-CQy">
+                        <rect key="frame" x="115" y="15" width="678" height="51"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="lYY-Ri-Fa0"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="L6i-y5-O0g" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="4ga-wa-hrL"/>
+                    <constraint firstItem="L6i-y5-O0g" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="D0E-Sa-dHg"/>
+                    <constraint firstItem="E2f-58-CQy" firstAttribute="leading" secondItem="AZT-gt-w7h" secondAttribute="trailing" constant="15" id="LWR-EE-hSs"/>
+                    <constraint firstAttribute="trailing" secondItem="E2f-58-CQy" secondAttribute="trailing" constant="15" id="ToZ-aI-vT4"/>
+                    <constraint firstAttribute="bottom" secondItem="E2f-58-CQy" secondAttribute="bottom" constant="15" id="XLW-Zd-Nvs"/>
+                    <constraint firstItem="AZT-gt-w7h" firstAttribute="leading" secondItem="L6i-y5-O0g" secondAttribute="trailing" constant="10" id="cMi-pa-hqO"/>
+                    <constraint firstItem="AZT-gt-w7h" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="rqg-ps-mqb"/>
+                    <constraint firstItem="E2f-58-CQy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="u5o-86-iPy"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="TaskCellSuperView" destination="H2p-sc-9uM" id="1aT-8m-EmN"/>
+                <outlet property="TaskCheckMarkButton" destination="AZT-gt-w7h" id="dbQ-op-Ydv"/>
+                <outlet property="TaskNumberLabel" destination="L6i-y5-O0g" id="gj3-JA-cDF"/>
+                <outlet property="TaskTextLabel" destination="E2f-58-CQy" id="GKQ-bw-wEe"/>
+            </connections>
+            <point key="canvasLocation" x="266.66666666666669" y="-136.94196428571428"/>
+        </tableViewCell>
+    </objects>
+</document>
